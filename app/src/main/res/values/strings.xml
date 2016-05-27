@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DemoParser</string>
+    <string name="root_url">https://s3.amazonaws.com/premise-android-interview</string>
+    <string name="something_went_wrong">Something went wrong while fetching the data</string>
+    <string name="title_category_list">Categories</string>
+    <string name="title_category_detail">Category Detail</string>
+    <string name="category_icon_description">Category Icon</string>
+    <string name="task_icon_description">Task Icon</string>
+    <string name="title_activity_demo">DemoActivity</string>
+    <string name="action_settings">Settings</string>
+</resources>
