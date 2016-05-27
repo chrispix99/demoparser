@@ -1,9 +1,9 @@
 package com.christopherpick.demoparser;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -25,7 +25,6 @@ import retrofit.client.OkClient;
 import retrofit.client.Response;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 
 public class CategoryFragment extends Fragment implements CategoryAdapter.OnItemClickListener {
@@ -41,7 +40,7 @@ public class CategoryFragment extends Fragment implements CategoryAdapter.OnItem
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view =  inflater.inflate(R.layout.category_fragment, container, false);
+        View view = inflater.inflate(R.layout.category_fragment, container, false);
         RecyclerView categoryList = (RecyclerView) view.findViewById(R.id.category_list);
 
         // Create adapter and lazy load data, and then update adapter.
@@ -88,6 +87,7 @@ public class CategoryFragment extends Fragment implements CategoryAdapter.OnItem
      * that with a multi variant app, you could have different endpoints defined in string resources. (Could have placed
      * it directly in the method, but calling it from outside illustrates how it could work being passed into a module,
      * the module only has one build variant, but picks up it's configuration from the calling application.
+     *
      * @param context
      * @param server
      * @return

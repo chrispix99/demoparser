@@ -1,9 +1,10 @@
 package com.christopherpick.demoparser.models;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import com.google.gson.annotations.SerializedName;
 
 public class Category implements Serializable {
 
@@ -15,54 +16,42 @@ public class Category implements Serializable {
     private List<Task> tasks = new ArrayList<Task>();
 
     /**
-     *
-     * @return
-     * The categoryName
+     * @return The categoryName
      */
     public String getCategoryName() {
         return categoryName;
     }
 
     /**
-     *
-     * @param categoryName
-     * The category_name
+     * @param categoryName The category_name
      */
     public void setCategoryName(String categoryName) {
         this.categoryName = categoryName;
     }
 
     /**
-     *
-     * @return
-     * The categoryIcon
+     * @return The categoryIcon
      */
     public String getCategoryIcon() {
         return categoryIcon;
     }
 
     /**
-     *
-     * @param categoryIcon
-     * The category_icon
+     * @param categoryIcon The category_icon
      */
     public void setCategoryIcon(String categoryIcon) {
         this.categoryIcon = categoryIcon;
     }
 
     /**
-     *
-     * @return
-     * The tasks
+     * @return The tasks
      */
     public List<Task> getTasks() {
         return tasks;
     }
 
     /**
-     *
-     * @param tasks
-     * The tasks
+     * @param tasks The tasks
      */
     public void setTasks(List<Task> tasks) {
         this.tasks = tasks;

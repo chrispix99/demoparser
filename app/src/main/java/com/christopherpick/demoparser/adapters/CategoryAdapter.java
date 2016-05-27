@@ -5,19 +5,16 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.christopherpick.demoparser.R;
 import com.christopherpick.demoparser.models.Category;
-import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
-public class CategoryAdapter extends  RecyclerView.Adapter<CategoryAdapter.ViewHolder> {
+public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHolder> {
 
 
     private List<Category> categories;
@@ -56,7 +53,7 @@ public class CategoryAdapter extends  RecyclerView.Adapter<CategoryAdapter.ViewH
         }
     }
 
-    public void swap(List<Category> categories){
+    public void swap(List<Category> categories) {
         if (this.categories != null) {
             this.categories.clear();
             this.categories.addAll(categories);
@@ -70,7 +67,7 @@ public class CategoryAdapter extends  RecyclerView.Adapter<CategoryAdapter.ViewH
         void onItemClick(Category category);
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder  {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
 
         public ImageView categoryIcon;
         public TextView categoryName;
